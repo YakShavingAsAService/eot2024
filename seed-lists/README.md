@@ -8,8 +8,12 @@ Provenance notes are included below. These lists will be uploaded into the
 
 See [commoncrawl/ccf-eot-seeds-2024](https://github.com/commoncrawl/ccf-eot-seeds-2024) for details.
 
-* ccf-gov-federal-web-graph-2024-jun-jul-aug.txt -- all .gov federal hostnames from current-federal.csv domains in CCF's 2024 June/July/August web graph
-* ccf-mil-web-graph-2024-jun-jul-aug.txt -- all .mil hostnames from CCF's 2024 June/July/August web graph
+* ccf-gov-federal-web-graph-2024-jun-jul-aug.txt - all .gov federal hostnames from current-federal.csv domains in CCF's 2024 June/July/August web graph
+* ccf-mil-web-graph-2024-jun-jul-aug.txt - all .mil hostnames from CCF's 2024 June/July/August web graph
+
+### Defenders of Wildlife seeds
+Seeds submitted by Andrew Carter on behalf of Defenders of Wildlife:
+* EoT archive submission - DoW 12-19-24.txt
 
 ### Environmental Data & Governance Initiative (EDGI) seeds
 Seeds supplied by Gretchen Gehrke of EDGI:
@@ -33,6 +37,10 @@ Seed lists produced by Gary Price, editor of infoDOCKET:
 * HHS 2020-.xlsx
 * HRSA (2020-).xlsx
 * BLM 2020-2024.xlsx - 2544 entries from the Bureau of Land Management. Most but not all PDFs. Along with the usual techniques, a number of extra searches were done to find documents that include terms like ANWR, oil, fracking, etc.
+* USDA_FIS_ERS.xlsx. 1700 or so urls from the USDA. Specifically, the Food Inspection Service and Economic Research Service. A few xlsx urls too.
+* IARPA 2020-Present.xlsx - IARPA.gov 406 seeds HTML and PDF 2020-Present.
+* ARPA-H.xlsx - APRA-H.gov 412 Seeds HTML and PDF 2020-Present.
+* MEDICAID 2020-2024.xlsx - Medicaid.gov 1983 seeds PDF and a few XLSX 2020-Present.
 
 ### Internet Archive seeds
 Seeds supplied by Antoine McGrath of Internet Archive:
@@ -76,9 +84,13 @@ Seeds supplied by Kelly L. Smith, Government Information Librarian and Librarian
 ### Seeds submitted to eot-info@archive.org
 
 * Federal URLs linked to on EnergyFundsForAll.org.xlsx - Submitted by Sally Robertson, EnergyFundsForAll.org
+* Hermann-Wu-nps-20241209.txt - NPS seeds submitted by Ailsa Hermann-Wu
+* GAO-hermann-wu-20241218.xlsx - GAO seeds submitted by Ailsa Hermann-Wu
+* Performance.gov-equity-hermann-wu-20241219.xlsx - seeds submitted by Ailsa Hermann-Wu on 20241219 centered around Performance.gov -- these are all PDFs of agency equity action plans or AANHPI plans.
+* Sustainability-gov-Hermann-Wu-20241220.xlsx - spreadsheet of PDF links (climate/sustainability plans and scorecards) from Sustainability.gov, excluding only the ones that are already listed in the URL Nomination Tool.
 
 ### Seeds sourced from Web resources
-The End of Term Web Archive team compiled a list of sources on the Web from which to source seeds:
+The End of Term Web Archive team and other contributors compiled a list of sources on the Web from which to source seeds:
 
 * US_Digital_Registry.csv - CSV file generated on 9/11/2024 by Praneeth Rikka at UNT from the data at the [Touchpoints U.S. Digital Registry](https://touchpoints.app.cloud.gov/registry).
 * Military-Departments-A-Z-List.csv - CSV file generated on 9/11/2024 by Lauren Ko at UNT from the data of the [U.S. Department of Defense's A-Z List](https://www.defense.gov/Resources/Military-Departments/A-Z-List/).
@@ -89,3 +101,5 @@ The End of Term Web Archive team compiled a list of sources on the Web from whic
 * 2_govt_urls_federal_only.csv - Pulled from [GSA's govt-urls repo](https://github.com/GSA/govt-urls/) (via https://raw.githubusercontent.com/GSA/govt-urls/main/2_govt_urls_federal_only.csv on 9/12/2024). The README indicates the repo "contains the list of public government managed domains that exist outside of the top-level .gov and .mil domains."
 * usagov.csv - Seeds scraped from https://www.usa.gov/agency-index/ by Jake Abrams, Founder, CivicsUS, LLC.
 * CDC html URLs from sitemap data - 20241201.csv - file of about 46,000 .html URLs created by parsing the CDC's sitemap file at https://www.cdc.gov/wcms-auto-sitemap-index.xml, which then pointed to other sitemaps, which  pointed to .html files.
+* CDC found PDFs 20241209 cleaned single file.csv - .gov PDF links obtained from webpages found on the US CDC website. It contains 46,873 links, with the format: the source HTML file containing the PDF link; the time in UTC in which the accessibility of the PDF file was confirmed; and a URL pointing to the PDF file itself. PDF links are deduped when multiple pages point to the same PDF, and link fragments are removed. All the PDF files have had their accessibility and content type verified with a HTTP HEAD request on Dec. 09 2024.
+* sitemaps.txt - List of federal website sitemap URLs discovered programmatically by Bentley Hensel via robots.txt files and common sitemap URL paths. URLs scraped from these sitemaps are organized by files named by hostname in the sitemap-url-seeds directory. This directory contains 2,749 files listing more than 56 million URLs as well as `_report_6_FINAL.txt` that gives statistics about the file sizes and URL counts in each of the files. URLs from the sitemap-url-seeds files will NOT be loaded into the eth2024_bulk Nomination Tool instance due to size.
